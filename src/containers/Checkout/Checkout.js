@@ -8,12 +8,10 @@ class Checkout extends Component{
 
 
     checkoutCancelledHandler = () => {
-        console.log("cancel");
         this.props.history.goBack();
     }
 
     checkoutContinuedHandler = () => {
-        console.log("continue");
         this.props.history.replace('/checkout/contact-data');
     }
 
@@ -22,7 +20,6 @@ class Checkout extends Component{
         let summary = <Redirect to='/'/>
         if(this.props.ings){
             const purchasedRedirect = this.props.purchased ? <Redirect to='/' /> : null;
-            console.log(purchasedRedirect);
             summary = (
                 <div>
 

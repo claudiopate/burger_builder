@@ -4,7 +4,6 @@ import NavigationItem from './NavigationItem/NavigationItem';
 
 const navigationItems = (props) => {
 
-    console.log("Authenticated: " + props.isAuthenticated);
 
     return (
         <ul className={classes.NavigationItems}>

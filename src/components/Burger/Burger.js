@@ -3,7 +3,6 @@ import classes from './Burger.css'
 import BurgerIngredient from './BurgerIngredient/BurgerIngredient';
 
 const burger = (props) => {
-    console.log(props);
     //Trasforma un object in un array composto da tanti item quanti dicono ogni value dell'object
     let transformedIngredients = Object.keys(props.ingredients)
         .map(igKey => {
